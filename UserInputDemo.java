@@ -46,11 +46,11 @@ public class UserInputDemo {
         }
         
         // Ask if user wants to export
-        System.out.print("\n💾 Would you like to export your contacts? (y/n): ");
+        System.out.print("\n>> Would you like to export your contacts? (y/n): ");
         String exportChoice = scanner.nextLine();
         
         if (exportChoice.toLowerCase().startsWith("y")) {
-            System.out.print("📁 Enter filename (without extension): ");
+            System.out.print("Enter filename (without extension): ");
             String filename = scanner.nextLine();
             if (!filename.trim().isEmpty()) {
                 manager.exportToFile(filename + ".csv");
@@ -58,7 +58,7 @@ public class UserInputDemo {
         }
         
         System.out.println("\n" + "=".repeat(60));
-        System.out.println("        DEMO COMPLETED - USER INPUT WORKS! ✨");
+        System.out.println("        DEMO COMPLETED - USER INPUT WORKS!");
         System.out.println("=".repeat(60));
         
         scanner.close();
